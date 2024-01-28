@@ -377,7 +377,7 @@ public class HlavniProgram {
     zofka.move(50);
 
 
-
+//
 
   }
 
