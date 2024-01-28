@@ -14,6 +14,8 @@ public class HlavniProgram {
 
     //TODO implementace domácího úkolu
 
+    //TODO implementace domácího úkolu
+
     // posouvam yelvu
     zofka.penUp();
     zofka.turnRight(90);
@@ -340,9 +342,97 @@ public class HlavniProgram {
     zofka.turnRight(90);
     zofka.penDown();
 
+//JMENO
+//Dcko
+    Decko(18);
+//relokace
+    zofka.turnRight(180);
+    zofka.penUp();
+    zofka.move(100);
+    zofka.turnLeft(90);
+//Acko
+    Acko();
+
+    //relokace
+    zofka.turnLeft(67.5);
+    zofka.move(50);
+
+    //Rko
+    Rko();
+
+    //relokace
+    zofka.turnLeft(45);
+    zofka.move(70);
+    zofka.turnLeft(90);
+//Ycko
+    Ycko();
+// relokace
+    zofka.turnLeft(90);
+    zofka.move(70);
+    zofka.turnLeft(90);
+    //Acko
+    Acko();
+    //relokace
+    zofka.turnLeft(67.5);
+    zofka.move(50);
 
 
 
+
+  }
+
+  private void Ycko() {
+    zofka.penDown();
+    zofka.move(60);
+    zofka.turnRight(45);
+    zofka.move(65);
+    zofka.turnRight(180);
+    zofka.move(65);
+    zofka.turnRight(90);
+    zofka.move(65);
+    zofka.penUp();
+    zofka.turnRight(180);
+    zofka.move(65);
+    zofka.turnRight(45);
+    zofka.move(60);
+  }
+
+  private void Rko() {
+    zofka.penDown();
+    zofka.turnLeft(90);
+    Decko(10);
+    zofka.turnLeft(135);
+    zofka.move(60);
+    zofka.penUp();
+  }
+
+  private void Acko() {
+    zofka.penDown();
+    zofka.turnLeft(-22.5);
+    zofka.penDown();
+    zofka.move(100);
+    zofka.turnRight(135);
+    zofka.move(100);
+    zofka.turnRight(180);
+    zofka.move(50);
+    zofka.turnLeft(67.5);
+    zofka.move(35);
+    zofka.penUp();
+    zofka.penUp();
+    zofka.turnRight(180);
+    zofka.move(35);
+    zofka.turnRight(67.5);
+    zofka.move(50);
+  }
+
+  private void Decko(int pixels) {
+    zofka.move(100);
+    zofka.turnRight(90);
+    zofka.move(pixels);
+    for (int i = 0; i < 9; i++) {
+      zofka.turnRight(20);
+      zofka.move(pixels);
+    }
   }
 
 }
